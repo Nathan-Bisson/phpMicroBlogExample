@@ -1,0 +1,53 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf190
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 -- phpMyAdmin SQL Dump\
+-- version 3.5.7\
+-- http://www.phpmyadmin.net\
+--\
+-- Host: localhost\
+-- Generation Time: Mar 11, 2014 at 03:34 AM\
+-- Server version: 5.5.29\
+-- PHP Version: 5.4.10\
+\
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";\
+SET time_zone = "+00:00";\
+\
+--\
+-- Database: `micro_blog`\
+--\
+\
+-- --------------------------------------------------------\
+\
+--\
+-- Table structure for table `users`\
+--\
+\
+CREATE TABLE `users` (\
+  `user_id` int(10) unsigned NOT NULL AUTO_INCREMENT,\
+  `user_name` text NOT NULL,\
+  `user_hash` char(32) NOT NULL,\
+  PRIMARY KEY (`user_id`)\
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=27 ;\
+\
+--\
+-- Dumping data for table `users`\
+--\
+\
+INSERT INTO `users` (`user_id`, `user_name`, `user_hash`) VALUES\
+(15, 'admin', '32250170a0dca92d53ec9624f336ca24'),\
+(16, 'Nathan', 'cc03e747a6afbbcbf8be7668acfebee5'),\
+(17, 'John', 'cc03e747a6afbbcbf8be7668acfebee5'),\
+(18, 'Jack', 'd8578edf8458ce06fbc5bb76a58c5ca4'),\
+(19, 'Joe', '8ff32489f92f33416694be8fdc2d4c22'),\
+(20, 'Jason', '62318aca2ef2e809a13623715a8aaff4'),\
+(21, 'Zedd', '20bf3aecac791d21b5630b5ccf869fcd'),\
+(22, 'Mango', 'e0deff349b2c61f5f796ccaa344a4930'),\
+(23, 'moo', '81566e986cf8cc685a05ac5b634af7f8'),\
+(24, 'nimda', 'cc03e747a6afbbcbf8be7668acfebee5'),\
+(25, 'qwerty', 'e99a18c428cb38d5f260853678922e03'),\
+(26, 'theUser', '32250170a0dca92d53ec9624f336ca24');\
+}
